@@ -7,7 +7,7 @@ Date:
 */
 
 /*  What was the error?
- 
+ 	The "==" operator tests for numerical equality between two values.
   
  */
 
@@ -19,8 +19,10 @@ public class P1_FavoriteColor {
 		System.out.print("What is your favorite color? ");
 		String name = console.next();
 		
-		if( name == "blue") {
+		if(name.equals("blue")) {
 			System.out.println("Mine too!");
+		}else {
+			System.out.println("Maybe you need a new favorite color.");
 		}
 
 	}
