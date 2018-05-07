@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 /*
 	ISYS 320
-	Name(s):
+	Name(s): Anthony Quehl
 	Date: 
 */
 
@@ -10,7 +10,7 @@ public class P4_ColorNamer {
 
 	public static void main(String[] args) {
 		Scanner console = new Scanner(System.in);		
-		System.out.print("List r for red,g for green,or b for blue ");
+		System.out.print("List r for red, g for green, or b for blue: ");
 		String color = console.next();
 		String color2;
 		color2 = color.toUpperCase();
@@ -21,6 +21,8 @@ public class P4_ColorNamer {
 			System.out.println("Green");
 		}else if (color2.equals("B")) {
 			System.out.println("Blue");
+		}else {
+			System.out.print("I don't know what " + color2 + " is. Please choose r, g, or b.");
 		}
 	}
 
